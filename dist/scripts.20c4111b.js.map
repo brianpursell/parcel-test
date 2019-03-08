@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/scripts.js"],"names":["clickMe","document","getElementById","onclick","alert"],"mappings":";AAAA,IAAMA,EAAUC,SAASC,eAAe,YAExCF,EAAQG,QAAU,WAAMC,OAAAA,MAAM","file":"scripts.20c4111b.js","sourceRoot":"../public","sourcesContent":["const clickMe = document.getElementById(\"click-me\");\n\nclickMe.onclick = () => alert(\"howdy\");\n"]}
