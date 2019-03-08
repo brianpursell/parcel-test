@@ -6,13 +6,23 @@ const close =
 const hamburger =
   "M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z";
 
-menuButton.onclick = () => {
-  const { children } = menuButton;
-  const menuIconIsOpen = children[0].getAttribute("d") === hamburger;
+const toggleIcon = () => {
+  let isHamburger = true;
 
-  menuIconIsOpen
-    ? children[0].setAttribute("d", close)
-    : children[0].setAttribute("d", hamburger);
+  return node => {
+    isHamburger
+      ? node.setAttribute("d", close)
+      : node.setAttribute("d", hamburger);
+
+    isHamburger = !isHamburger;
+  };
+};
+
+const toggleMenuIcon = toggleIcon();
+
+menuButton.onclick = () => {
+  const path = menuButton.querySelector("path");
+  toggleMenuIcon(path);
 
   menu.classList.toggle("show");
 };
