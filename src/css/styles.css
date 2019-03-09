@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    
 }
 
 nav {
@@ -15,8 +14,7 @@ nav {
     left: 0;
     right: 0;
 
-    transition: all .6s ease;
-    /* transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); */
+    transition: all .5s ease-in-out;
 }
 
 #open-button {
@@ -53,15 +51,14 @@ aside {
 
     background-color: #40be90;
 
-    transition: left .6s ease;
-    /* transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); */
+    transition: all .5s ease-in-out;
 }
 
-.pull {
+.show {
     left: 0;
 }
 
-.push {
+.hide {
     left: 260px;
     right: -260px;
 }

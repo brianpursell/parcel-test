@@ -4,8 +4,8 @@ const openButton = document.getElementById("open-button");
 const closeButton = document.getElementById("close-button");
 
 const toggle = () => {
-  menu.classList.toggle("pull");
-  nav.classList.toggle("push");
+  menu.classList.toggle("show");
+  nav.classList.toggle("hide");
 };
 
 openButton.onclick = toggle;
