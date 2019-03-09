@@ -1,15 +1,13 @@
 body {
     margin: 0;
-    background-color: #f3f3f3;
+    
 }
 
 nav {
+    background-color: #f3f3f3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    margin-left: 10px;
-    margin-right: 10px;
     height: 60px;
 
     position: absolute;
@@ -23,6 +21,7 @@ nav {
 
 #open-button {
     height: 40px;
+    margin-right: 10px;
 }
 
 #close-button {
@@ -34,7 +33,9 @@ nav {
 }
 
 h1 {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
 
     color: #4c545c;
 
